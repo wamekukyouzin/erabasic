@@ -108,6 +108,18 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>(^#DIM|^#LOCALSIZE)[ \t　]+(DYNAMIC[ \t　]+)?\w+, (?=\d+\n)</string>
+			<key>name</key>
+			<string>variable.parameter</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(^#DIMS|^#LOCALSSIZE)[ \t　]+(DYNAMIC[ \t　]+)?\w+, (?=\d+\n)</string>
+			<key>name</key>
+			<string>variable.language</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>(^#DIM|^#LOCALSIZE)[ \t　]+(DYNAMIC[ \t　]+)?\w+(?=\n)</string>
 			<key>name</key>
 			<string>variable.parameter</string>
@@ -300,7 +312,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(\#DIM||\#DIMS|\#DEFINE|\#FUNCTION|\#FUNCTIONS|\#LATER|\#LOCALSIZE|\#LOCALSSIZE|\#ONLY|\#PRI|\#SINGLE|ABLUP|AFTERTRAIN|BACK|BOLD|CENTER|FIRST|FORWARD|INT|IS|ITALIC|LEFT|REF|REGULAR|RIGHT|SHOP|STR|TITLE|TO|TRAIN|TURNEND)\b</string>
+			<string>(#DIM(S)?|#DEFINE|#FUNCTION(S)?|#LATER|#LOCAL(S)?SIZE|#ONLY|#PRI|#SINGLE|ABLUP|AFTERTRAIN|BACK|BOLD|CENTER|FIRST|FORWARD|INT|IS|ITALIC|LEFT|REF|REGULAR|RIGHT|SHOP|STR|TITLE|TO|TRAIN|TURNEND)\b</string>
 			<key>name</key>
 			<string>keyword.other</string>
 		</dict>
