@@ -108,13 +108,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(^#DIM|^#LOCALSIZE)[ \t　]+(DYNAMIC[ \t　]+)?\w+, (?=\d+\n)</string>
+			<string>(^#DIM|^#LOCALSIZE)[ \t　]+(DYNAMIC[ \t　]+)?\w+(?=, \d+\n)</string>
 			<key>name</key>
 			<string>variable.parameter</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(^#DIMS|^#LOCALSSIZE)[ \t　]+(DYNAMIC[ \t　]+)?\w+, (?=\d+\n)</string>
+			<string>(^#DIMS|^#LOCALSSIZE)[ \t　]+(DYNAMIC[ \t　]+)?\w+(?=, \d+\n)</string>
 			<key>name</key>
 			<string>variable.language</string>
 		</dict>
@@ -198,13 +198,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(^|^;!;)\[SKIPSTART\][^(\[SKIPEND\])]+</string>
-			<key>name</key>
-			<string>comment.block</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(^|^;!;)\[SKIPEND\]</string>
+			<string>(^|^;!;)\[SKIPSTART\](.*\n)*?\[SKIPEND\]</string>
 			<key>name</key>
 			<string>comment.block</string>
 		</dict>
