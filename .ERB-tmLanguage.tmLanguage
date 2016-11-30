@@ -290,6 +290,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>^(#DEFINE|#LATER|#ONLY|#PRI|#SINGLE).+</string>
+			<key>name</key>
+			<string>invalid.illegal</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b(BEGIN|(TRY)?CALL(FORM)?|(TRY)?JUMP(FORM)?|(TRY)?GOTO(FORM)?)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
@@ -308,7 +314,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(#DIM(S)?|#DEFINE|#FUNCTION(S)?|#LATER|#LOCAL(S)?SIZE|#ONLY|#PRI|#SINGLE|ABLUP|AFTERTRAIN|BACK|BOLD|CENTER|FIRST|FORWARD|INT|IS|ITALIC|LEFT|REF|REGULAR|RIGHT|SHOP|STR|TITLE|TO|TRAIN|TURNEND)\b</string>
+			<string>^(#DIM(S)?|#DEFINE|#FUNCTION(S)?|#LATER|#LOCAL(S)?SIZE|#ONLY|#PRI|#SINGLE)</string>
+			<key>name</key>
+			<string>keyword.other</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(ABLUP|AFTERTRAIN|BACK|BOLD|CENTER|FIRST|FORWARD|INT|IS|ITALIC|LEFT|REF|REGULAR|RIGHT|SHOP|STR|TITLE|TO|TRAIN|TURNEND)\b</string>
 			<key>name</key>
 			<string>keyword.other</string>
 		</dict>
