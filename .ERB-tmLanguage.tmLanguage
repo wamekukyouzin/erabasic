@@ -197,8 +197,10 @@
 			<string>constant.numeric</string>
 		</dict>
 		<dict>
-			<key>match</key>
-			<string>(^|^;!;)\[SKIPSTART\](.*\n)*?\[SKIPEND\]</string>
+			<key>begin</key>
+			<string>(^|^;!;)\[SKIPSTART\]</string>
+			<key>end</key>
+			<string>(^|^;!;)\[SKIPEND\]</string>
 			<key>name</key>
 			<string>comment.block</string>
 		</dict>
@@ -306,7 +308,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(#DIM(S)?|#DEFINE|#FUNCTION(S)?|#LATER|#LOCAL(S)?SIZE|#ONLY|#PRI|#SINGLE|ABLUP|AFTERTRAIN|BACK|BOLD|CENTER|FIRST|FORWARD|INT|IS|ITALIC|LEFT|REF|REGULAR|RIGHT|SHOP|STR|TITLE|TO|TRAIN|TURNEND)\b</string>
+			<string>\b(#DIM(S)?|#DEFINE|#FUNCTION(S)?|#LATER|#LOCAL(S)?SIZE|#ONLY|#PRI|#SINGLE|ABLUP|AFTERTRAIN|BACK|BOLD|CENTER|FIRST|FORWARD|INT|IS|ITALIC|LEFT|REF|REGULAR|RIGHT|SHOP|STR|TITLE|TO|TRAIN|TURNEND)\b</string>
 			<key>name</key>
 			<string>keyword.other</string>
 		</dict>
