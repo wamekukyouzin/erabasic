@@ -50,7 +50,7 @@
 			<key>match</key>
 			<string>(^|^;!;)@[^(,\n]+</string>
 			<key>name</key>
-			<string>entity.name.function</string>
+			<string>entity.name.class</string>
 		</dict>
 		<dict>
 			<key>match</key>
